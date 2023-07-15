@@ -1,16 +1,20 @@
 {
-  "name": "class_8_miniproject",
+  "name": "nik-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a simpe app",
+  "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "keywords": [
+    "helo"
+  ],
+  "author": "nikhil",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "mongoose": "^14.20.1"
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.4"
   }
 }
