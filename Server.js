@@ -1,10 +1,4 @@
 
-
-//https://github.com/Automattic/mongoose/issues/2359
-//person become people
-//// Disable the option:
-//var person = Schema({}, {pluralize: false});
-
 var express = require('express');
 var app = express();
 
@@ -40,7 +34,8 @@ app.get('/db',  async (req, res)=>{
 const start = async () => {
   try {
     await mongoose.connect(
-      "mongodb://127.0.0.1:27017/Company"
+      //"mongodb://127.0.0.1:27017/Company"
+      "mongodb+srv://ipegsolutions:GtKdjiFQMUZz7nua@cluster0.o6xtbhj.mongodb.net/"
     );
     app.listen(3003, () => console.log("Server started on port 3003"));
   } catch (error) {
